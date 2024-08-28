@@ -105,7 +105,6 @@ const Users: React.FC = () => {
         />
       )}
 
-      <Text style={styles.textTitle}>{strings.users}</Text>
       {!loading && (
         <FlatList
           keyExtractor={(_, index) => index.toString()}

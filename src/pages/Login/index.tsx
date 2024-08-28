@@ -21,8 +21,8 @@ export type loginScreenProp = NativeStackNavigationProp<
 >;
 
 const Login: React.FC = () => {
-  const [email, setEmail] = useState("eve.holt@reqres.in");
-  const [password, setPassword] = useState("cityslicka");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const navigation = useNavigation<loginScreenProp>();
 
   return (
@@ -36,6 +36,7 @@ const Login: React.FC = () => {
           placeholderTextColor={colors.darkGray}
           style={styles.containerInput}
           placeholder={strings.email}
+          keyboardType="email-address"
           onChangeText={(text) => setEmail(text)}
           value={email}
         />

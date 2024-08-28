@@ -4,5 +4,6 @@ const strings = {
   password: "Senha",
   entrar: "Entrar",
   users: "Usuários",
+  details: "Detalhes",
 };
 export default strings;
